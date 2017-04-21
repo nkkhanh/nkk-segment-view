@@ -12,6 +12,16 @@
 		8B88CC841EAA5BE70082DFA4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B88CC821EAA5BE70082DFA4 /* Main.storyboard */; };
 		8B88CC861EAA5BE70082DFA4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8B88CC851EAA5BE70082DFA4 /* Assets.xcassets */; };
 		8B88CC891EAA5BE70082DFA4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B88CC871EAA5BE70082DFA4 /* LaunchScreen.storyboard */; };
+		8B88CC911EAA5CD90082DFA4 /* NKKSegmentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B88CC901EAA5CD90082DFA4 /* NKKSegmentView.swift */; };
+		8B88CC931EAA5CFB0082DFA4 /* UILabelExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B88CC921EAA5CFB0082DFA4 /* UILabelExtension.swift */; };
+		8B88CC951EAA5D3E0082DFA4 /* NKKCustomeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B88CC941EAA5D3E0082DFA4 /* NKKCustomeCell.swift */; };
+		8B88CC971EAA5E250082DFA4 /* StringHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B88CC961EAA5E250082DFA4 /* StringHelper.swift */; };
+		8B88CC991EAA5F9A0082DFA4 /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B88CC981EAA5F9A0082DFA4 /* PageViewController.swift */; };
+		8B88CC9B1EAA5FB70082DFA4 /* PageContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B88CC9A1EAA5FB70082DFA4 /* PageContentViewController.swift */; };
+		8B88CC9D1EAA61570082DFA4 /* Page1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B88CC9C1EAA61570082DFA4 /* Page1ViewController.swift */; };
+		8B88CC9F1EAA61680082DFA4 /* Page2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B88CC9E1EAA61680082DFA4 /* Page2ViewController.swift */; };
+		8B88CCA11EAA61740082DFA4 /* Page3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B88CCA01EAA61740082DFA4 /* Page3ViewController.swift */; };
+		8B88CCA31EAA64230082DFA4 /* UIColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B88CCA21EAA64230082DFA4 /* UIColorExtensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +32,16 @@
 		8B88CC851EAA5BE70082DFA4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8B88CC881EAA5BE70082DFA4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8B88CC8A1EAA5BE70082DFA4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8B88CC901EAA5CD90082DFA4 /* NKKSegmentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NKKSegmentView.swift; sourceTree = "<group>"; };
+		8B88CC921EAA5CFB0082DFA4 /* UILabelExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UILabelExtension.swift; sourceTree = "<group>"; };
+		8B88CC941EAA5D3E0082DFA4 /* NKKCustomeCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NKKCustomeCell.swift; sourceTree = "<group>"; };
+		8B88CC961EAA5E250082DFA4 /* StringHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringHelper.swift; sourceTree = "<group>"; };
+		8B88CC981EAA5F9A0082DFA4 /* PageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
+		8B88CC9A1EAA5FB70082DFA4 /* PageContentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageContentViewController.swift; sourceTree = "<group>"; };
+		8B88CC9C1EAA61570082DFA4 /* Page1ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Page1ViewController.swift; sourceTree = "<group>"; };
+		8B88CC9E1EAA61680082DFA4 /* Page2ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Page2ViewController.swift; sourceTree = "<group>"; };
+		8B88CCA01EAA61740082DFA4 /* Page3ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Page3ViewController.swift; sourceTree = "<group>"; };
+		8B88CCA21EAA64230082DFA4 /* UIColorExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorExtensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +80,16 @@
 				8B88CC851EAA5BE70082DFA4 /* Assets.xcassets */,
 				8B88CC871EAA5BE70082DFA4 /* LaunchScreen.storyboard */,
 				8B88CC8A1EAA5BE70082DFA4 /* Info.plist */,
+				8B88CC901EAA5CD90082DFA4 /* NKKSegmentView.swift */,
+				8B88CC921EAA5CFB0082DFA4 /* UILabelExtension.swift */,
+				8B88CC941EAA5D3E0082DFA4 /* NKKCustomeCell.swift */,
+				8B88CC961EAA5E250082DFA4 /* StringHelper.swift */,
+				8B88CC981EAA5F9A0082DFA4 /* PageViewController.swift */,
+				8B88CC9A1EAA5FB70082DFA4 /* PageContentViewController.swift */,
+				8B88CC9C1EAA61570082DFA4 /* Page1ViewController.swift */,
+				8B88CC9E1EAA61680082DFA4 /* Page2ViewController.swift */,
+				8B88CCA01EAA61740082DFA4 /* Page3ViewController.swift */,
+				8B88CCA21EAA64230082DFA4 /* UIColorExtensions.swift */,
 			);
 			path = NKKSegmentView;
 			sourceTree = "<group>";
@@ -137,8 +167,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8B88CC9F1EAA61680082DFA4 /* Page2ViewController.swift in Sources */,
+				8B88CC971EAA5E250082DFA4 /* StringHelper.swift in Sources */,
+				8B88CC9B1EAA5FB70082DFA4 /* PageContentViewController.swift in Sources */,
+				8B88CCA31EAA64230082DFA4 /* UIColorExtensions.swift in Sources */,
+				8B88CCA11EAA61740082DFA4 /* Page3ViewController.swift in Sources */,
+				8B88CC991EAA5F9A0082DFA4 /* PageViewController.swift in Sources */,
+				8B88CC931EAA5CFB0082DFA4 /* UILabelExtension.swift in Sources */,
 				8B88CC811EAA5BE70082DFA4 /* ViewController.swift in Sources */,
+				8B88CC911EAA5CD90082DFA4 /* NKKSegmentView.swift in Sources */,
+				8B88CC9D1EAA61570082DFA4 /* Page1ViewController.swift in Sources */,
 				8B88CC7F1EAA5BE70082DFA4 /* AppDelegate.swift in Sources */,
+				8B88CC951EAA5D3E0082DFA4 /* NKKCustomeCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
