@@ -10,19 +10,27 @@
 import Foundation
 import UIKit
 
+enum NKKPositon : Int {
+    case left = 0
+    case middle
+    case right
+}
+
 class NKKCustomeCell : UICollectionViewCell {
     var label = UILabel()
     var imageView = UIImageView()
+    var position: NKKPositon = .middle
+    var isChose = false
     
     override init(frame: CGRect) {
         super.init(frame: frame)
-        backgroundColor = UIColor.black
+        backgroundColor = UIColor.clear
         
         imageView.clipsToBounds = true
         addSubview(imageView)
         
         label.textAlignment = .center
-        label.backgroundColor = UIColor.white
+        label.backgroundColor = UIColor.clear
         contentView.addSubview(label)
         
     }
@@ -34,5 +42,24 @@ class NKKCustomeCell : UICollectionViewCell {
     }
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
+    }
+    func updatUI(){
+//        switch position {
+//        case .left:
+//            self.backgroundColor = UIColor.white
+//        case .right:
+//            self.backgroundColor = UIColor.blue
+//        case .middle:
+//            self.backgroundColor = UIColor.red
+//        default:
+//            break
+//        }
+        
+        if label.textColor == UIColor.white {
+            self.backgroundColor = UIColor.red
+        } else {
+            self.backgroundColor = UIColor.white
+            
+        }
     }
 }

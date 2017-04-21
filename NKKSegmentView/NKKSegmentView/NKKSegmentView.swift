@@ -25,7 +25,7 @@ class NKKSegmentView: UIView, UICollectionViewDataSource, UICollectionViewDelega
     private var marginLeft = CGFloat(0)
     private var tabLabel = UILabel()
     
-    private final var indicatorLayer = CALayer()
+    private final var indicatorView = UIView()
     override init(frame: CGRect) {
         super.init(frame: frame)
     }
@@ -46,10 +46,11 @@ class NKKSegmentView: UIView, UICollectionViewDataSource, UICollectionViewDelega
         subCatCollectionView.delegate = self
         subCatCollectionView.dataSource = self
         addSubview(subCatCollectionView)
-        indicatorLayer.borderColor = UIColor.red.cgColor
-        indicatorLayer.borderWidth = 1
-        indicatorLayer.backgroundColor = UIColor.red.cgColor
-        self.layer.addSublayer(indicatorLayer)
+        //indicatorView.borderColor = UIColor.red.cgColor
+        //indicatorView.borderWidth = 1
+        indicatorView.backgroundColor = UIColor.red
+        //self.addSubview(indicatorView)
+        //sendSubview(toBack: indicatorView)
         marginLeft = 0
     }
     
@@ -63,7 +64,7 @@ class NKKSegmentView: UIView, UICollectionViewDataSource, UICollectionViewDelega
     }
     func refreshUI(){
         self.subCatCollectionView.reloadData()
-        self.updateIndicatorLayer()
+        self.updateIndicatorView()
     }
     
     //MARK: CollectionView Methods
@@ -74,15 +75,29 @@ class NKKSegmentView: UIView, UICollectionViewDataSource, UICollectionViewDelega
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "NKKCustomeCell", for: indexPath) as! NKKCustomeCell
         cell.label.text = arrayTabs[indexPath.row]
         cell.label.formatSize(size: FontSize)
+        
+        cell.isChose = false
         if selectingTab == indexPath.row {
            // cell.label.font = UIFont(name: "SourceSansPro-Semibold", size: 16)
-            cell.label.textColor = UIColor(rgb: 0xc90000)
+            //cell.label.textColor = UIColor(rgb: 0xc90000)
+            cell.label.textColor = UIColor.white
+            cell.isChose = true
         } else {
           //  cell.label.font = UIFont(name: "SourceSansPro-Regular", size: 16)
             cell.label.textColor = UIColor(rgb: 0x767676)
         }
         cell.imageView.isHidden = true
-        cell.backgroundColor = UIColor.green
+        //cell.backgroundColor = UIColor.green
+        let lastIndex = arrayTabs.count - 1
+        switch indexPath.row {
+        case 0:
+            cell.position = .left
+        case lastIndex:
+            cell.position = .right
+        default:
+            cell.position = .middle
+        }
+        cell.updatUI()
         return cell
     }
     
@@ -125,12 +140,15 @@ class NKKSegmentView: UIView, UICollectionViewDataSource, UICollectionViewDelega
         return postX
     }
     
-    func updateIndicatorLayer() {
+    func updateIndicatorView() {
         
         let cellWidth = (bounds.width - marginLeft * 2) / CGFloat(arrayTabs.count)
         let postX = marginLeft + CGFloat(self.selectingTab) * cellWidth
         
-        indicatorLayer.frame = CGRect(x: postX, y: bounds.height - BottomPadding, width: cellWidth, height: 3)
+        //indicatorLayer.frame = CGRect(x: postX, y: bounds.height - BottomPadding, width: cellWidth, height: 3)
+        indicatorView.frame = CGRect(x: postX, y: 0, width: cellWidth, height: bounds.height)
+        self.layoutIfNeeded()
+        self.setNeedsLayout()
         //        CGRectMake(postX, bounds.height - BottomPadding, indicatorWidth, 1)
     }
     
@@ -175,8 +193,9 @@ class NKKSegmentView: UIView, UICollectionViewDataSource, UICollectionViewDelega
             offsetX = (width * (-1))
         }
         let cellWith = ceil((bounds.width - marginLeft * 2) / CGFloat(arrayTabs.count))
-        indicatorLayer.frame = CGRect(x: originalX + offsetX, y: bounds.height - BottomPadding, width: cellWith, height: 3)
-        print("indicatorLayer.frame  ", indicatorLayer.frame )
+        //indicatorView.frame = CGRect(x: originalX + offsetX, y: bounds.height - BottomPadding, width: cellWith, height: 3)
+        indicatorView.frame = CGRect(x: originalX + offsetX, y: 0, width: cellWith, height: bounds.height)
+        print("indicatorLayer.frame  ", indicatorView.frame )
         //        CGRectMake(originalX + offsetX , bounds.height - BottomPadding, width , 1)
     }
     

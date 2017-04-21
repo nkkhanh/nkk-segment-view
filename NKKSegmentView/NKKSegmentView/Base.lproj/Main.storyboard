@@ -60,7 +60,19 @@
                     <view key="view" contentMode="scaleToFill" id="2Kk-eu-VdY">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Page 1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M8Y-dw-qeR">
+                                <rect key="frame" x="118" y="304.5" width="139" height="58"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="48"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="M8Y-dw-qeR" firstAttribute="centerX" secondItem="2Kk-eu-VdY" secondAttribute="centerX" id="BsJ-l5-06a"/>
+                            <constraint firstItem="M8Y-dw-qeR" firstAttribute="centerY" secondItem="2Kk-eu-VdY" secondAttribute="centerY" id="bWs-6P-YuW"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eeD-eR-12B" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -78,7 +90,19 @@
                     <view key="view" contentMode="scaleToFill" id="g8x-c7-ims">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Page 2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B0Y-qo-glI">
+                                <rect key="frame" x="115" y="304.5" width="145" height="58"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="48"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="B0Y-qo-glI" firstAttribute="centerX" secondItem="g8x-c7-ims" secondAttribute="centerX" id="kX7-Zc-WIY"/>
+                            <constraint firstItem="B0Y-qo-glI" firstAttribute="centerY" secondItem="g8x-c7-ims" secondAttribute="centerY" id="sZu-Ga-6Mo"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YDl-lD-fI1" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -96,7 +120,19 @@
                     <view key="view" contentMode="scaleToFill" id="u33-gZ-gZf">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Page 3" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mju-2Z-QIe">
+                                <rect key="frame" x="114.5" y="304.5" width="146" height="58"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="48"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Mju-2Z-QIe" firstAttribute="centerX" secondItem="u33-gZ-gZf" secondAttribute="centerX" id="Ylw-Pi-beb"/>
+                            <constraint firstItem="Mju-2Z-QIe" firstAttribute="centerY" secondItem="u33-gZ-gZf" secondAttribute="centerY" id="aYL-n1-BZx"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IUW-JQ-C5t" userLabel="First Responder" sceneMemberID="firstResponder"/>
